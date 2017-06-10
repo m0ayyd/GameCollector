@@ -12,9 +12,9 @@ class GameViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
     @IBOutlet weak var gameImageView: UIImageView!
     @IBOutlet weak var addUpdateButton: UIButton!
+    @IBOutlet weak var deleteButton: UIButton!
     
     @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet var deleteButton: UIView!
     
     var imagePicker = UIImagePickerController()
     var game : Game? = nil
@@ -30,8 +30,7 @@ class GameViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             titleTextField.text = game?.title
             addUpdateButton.setTitle("Update", for: .normal)
         } else {
-            // Glitch make viewController become black
-//            deleteButton.isHidden = true
+            deleteButton.isHidden = true
         }
     }
     

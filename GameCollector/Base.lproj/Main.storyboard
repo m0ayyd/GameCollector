@@ -86,7 +86,6 @@
                                 <rect key="frame" x="165" y="352" width="45" height="30"/>
                                 <state key="normal" title="Delete"/>
                                 <connections>
-                                    <action selector="addTapped:" destination="rQY-co-oCS" eventType="touchUpInside" id="IYg-q0-NyE"/>
                                     <action selector="deleteTapped:" destination="rQY-co-oCS" eventType="touchUpInside" id="gFC-M5-9f3"/>
                                 </connections>
                             </button>
@@ -121,7 +120,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="addUpdateButton" destination="Ijn-FS-net" id="WQV-GQ-OQs"/>
-                        <outlet property="deleteButton" destination="PeR-Gk-GM9" id="XAm-af-AUT"/>
+                        <outlet property="deleteButton" destination="HV6-DX-hS3" id="2rT-ZG-9be"/>
                         <outlet property="gameImageView" destination="gNF-Oc-xwj" id="y7G-LH-SH2"/>
                         <outlet property="titleTextField" destination="J2Q-GD-UUj" id="axN-G1-dAQ"/>
                     </connections>

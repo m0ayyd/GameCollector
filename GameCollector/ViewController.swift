@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var tableView: UITableView!
     
     var games: [Game] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -32,7 +33,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             try games = context.fetch(Game.fetchRequest())
             tableView.reloadData()
         } catch {
-            
+
         }
     }
     
